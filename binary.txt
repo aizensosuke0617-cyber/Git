@@ -1,0 +1,51 @@
+#The main idea behind binary search
+
+        SORTED ARRAY
+             ↓
+        Find middle
+             ↓
+       Compare with target
+          ↙       ↘
+       Smaller    Greater
+          ↓         ↓
+      Search      Search
+       LEFT        RIGHT
+          ↘       ↙
+          Repeat
+
+#binary search algorithm
+
+1. Start
+2. Take a sorted array and target element.
+3. Set low = 0.
+4. Set high = n - 1.
+5. Calculate mid = (low + high) / 2.
+6. Compare arr[mid] with target.
+7. If arr[mid] == target, element is found.
+8. If target > arr[mid], search the right half.
+   Set low = mid + 1.
+9. If target < arr[mid], search the left half.
+   Set high = mid - 1.
+10. Repeat until low > high.
+11. If low becomes greater than high, element is not found.
+12. Stop.
+
+
+#logic for binary search (with user input)
+
+              MIDDLE
+                ↓
+        Is middle = target?
+             ↙       ↘
+           YES        NO
+            ↓          ↓
+          FOUND     Compare
+                    ↙      ↘
+              Target <     Target >
+                mid          mid
+                 ↓             ↓
+               LEFT          RIGHT
+                 ↓             ↓
+            high=mid-1    low=mid+1
+                 ↘             ↙
+                    REPEAT

@@ -1,0 +1,52 @@
+#logic for linear search for ADA (without user input)
+
+Start
+  ↓
+Take array
+  ↓
+Take target
+  ↓
+Start from index 0
+  ↓
+Compare current element with target
+  ↓
+Equal?
+ ↙    ↘
+YES    NO
+ ↓      ↓
+Found   Move to next element
+ ↓      ↓
+STOP   Repeat
+         ↓
+      Array ended?
+         ↓
+        YES
+         ↓
+       Not Found
+
+
+#logic for linear search for ADA (with user input)
+
+User enters n
+       ↓
+User enters array
+       ↓
+User enters target
+       ↓
+Start i = 0
+       ↓
+Compare arr[i] with target
+       ↓
+Equal?
+  ↙       ↘
+YES       NO
+ ↓         ↓
+Found    i++
+ ↓         ↓
+STOP    Repeat
+           ↓
+      Array finished?
+       ↙       ↘
+     YES       NO
+      ↓         ↓
+  Not Found   Continue
